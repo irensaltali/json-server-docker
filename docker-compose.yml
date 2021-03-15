@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  jsonserver:
+    build: .
+    volumes:
+      - ./json-data:/json-server
+    ports:
+      - "5001:3000"
